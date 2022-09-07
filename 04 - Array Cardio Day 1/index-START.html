@@ -48,6 +48,14 @@
     // Array.prototype.sort()
     // 3. Sort the inventors by birthdate, oldest to youngest
 
+    let ordered = inventors.sort((investor1, investor2) => {
+      if (investor1.year > investor2.year) {
+        return 1;
+      } else {
+        return -1;
+      }
+    })
+
     // Array.prototype.reduce()
     // 4. How many years did all the inventors live all together?
 
